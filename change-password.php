@@ -1,3 +1,8 @@
+<?php
+  include('./functions/functions.php');
+  include('./pages/resetpwd/r2.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,7 +40,7 @@
             Please use the form below to create a new password
           </p>
 
-          <form action="">
+          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <div class="form-group">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -70,6 +75,7 @@
               type="submit"
               value="Reset my password"
               class="btn btn-primary btn-block mt-4"
+              name="submit"
             />
           </form>
         </div>

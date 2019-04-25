@@ -5,7 +5,7 @@
         $fname = $_POST['fname'];
 
         //$url = "http://35.203.11.145/navbell-api/?tooken=tooken()&op=rcode";
-        $url = "http://35.203.0.205:2019/?tooken=tooken()&op=code";
+        $url = "http://35.203.0.205:2019/?tooken=tooken()&op=rcode";
 
 
         $data = array(

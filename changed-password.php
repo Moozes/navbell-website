@@ -36,7 +36,7 @@
           </p>
 
           <div class="cta">
-            <a href=""> Start using NavBel!</a>
+            <a href="index.php"> Start using NavBel!</a>
           </div>
         </div>
       </div>

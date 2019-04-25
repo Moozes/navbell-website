@@ -18,7 +18,5 @@ if(isset($_POST["signin"])){
 			echo  '<script>alert("raw ymchi go session part");</script>';
 			break;
 	}
-} else {
-	echo 'didnt submit';
 }
 ?>

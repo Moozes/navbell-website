@@ -1,6 +1,11 @@
 <?php
   include("./functions/functions.php");
   $flag = 1337;
+  // include is in the top because session_start  must be before any html tag
+  include("./pages/login.php");
+  include("./pages/signup.php");
+  include('./pages/resetpwd/r1.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -133,7 +138,7 @@
                     <p class="text-center mt-1">Don't have an account?<a id="signupModal" href="#" data-toggle="modal" data-target="#signupModal1"> Sign up in seconds</a></p> -->
               </form>
               <?php
-                include("./pages/login.php");
+                //include("./pages/login.php");
               ?>
             </div>
           </div>
@@ -299,7 +304,7 @@
                   <input type="submit" value="Sign up" class="btn btn-primary btn-block mt-4" name="submit">
                   </form>
                   <?php
-                    include("./pages/signup.php");
+                    //include("./pages/signup.php");
                   ?>
             </div>
           </div>
