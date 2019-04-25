@@ -28,22 +28,26 @@ if(isset($_POST["submit"])){ // empty ....
 					switch($_FILES['img']['error']){
 						case 0:
 							if($_FILES['img']['type'] == 'image/jpeg'){
-								$data['pictures'] = base64_encode(file_get_contents($_FILES['img']['tmp_name']));
+								$data['picture'] = base64_encode(file_get_contents($_FILES['img']['tmp_name']));
 							} else {
-								echo 'your image should be in jpeg format';
 								//should i use die() to not run postapi()
+								echo '<script>alert("your image should be in jpeg format");</script>';
+								goto x;
 							}
 						break;
 						case 1:
 						case 2:
-							echo 'image size too big';
+							echo '<script>alert("image size too big");</script>';
 							//should i use die()
+							goto x;
 						break;
 						case 4:
-							//user didn't choose image
-							//should i send empty string as an image
+							//user didn't choose image so im posting a default image
+							$data['picture'] = base64_encode(file_get_contents('./img/profile.jpg'));
 						break;
-						default: echo 'the image didn\'t upload';  
+						default: 
+							echo '<script>alert("the image didn\'t upload");</script>';  
+							goto x;
 
 					}
                 	$result = postapi($url,$op,$data);
@@ -62,15 +66,16 @@ if(isset($_POST["submit"])){ // empty ....
 
                 ;
                 break;
-                case '2' :echo("<script> alert('u re already subscribed');</script>");//dont forget to redirect to login.php
-
+				case '2' :
+					echo("<script> alert('u re already subscribed');</script>");//dont forget to redirect to login.php
                 break;
                 case '3' :echo('<script> alert("machi mn esi 404 "); </script>');
                 break;
                 case "-1":echo('<script> alert("something went wrong");</script>');
                 break;
 
-            }
+			}
+			x:
         }
 
 
