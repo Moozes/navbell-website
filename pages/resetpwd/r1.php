@@ -1,6 +1,6 @@
 <?php 
 
-if($_GET['page']=="recover"){
+if(isset($_POST['reset_password'])){
 
 $op = "rcode";
 $data = array("email"=>$_POST["email"]);

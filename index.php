@@ -95,7 +95,7 @@
   
                     <input
                       type="text"
-                      name="email"
+                      name="login"
                       class="form-control"
                       placeholder="E-mail"
                     />
@@ -121,6 +121,7 @@
                   type="submit"
                   value="Log in"
                   class="btn btn-primary btn-block"
+                  name="signin"
                 />
                 <p class="text-center mt-4">
                   <a id="FPModal" href="javascript:void(0)">Forgot password?</a>
@@ -151,7 +152,7 @@
                 To reset your password, enter the e-mail address of your NavBel
                 account.
               </p>
-              <form action="">
+              <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                 <div class="form-group">
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -172,6 +173,7 @@
                   value="Submit"
                   class="btn btn-primary btn-block"
                   id="FPFinal"
+                  name="reset-password"
                 />
                 
               </form>
@@ -264,7 +266,7 @@
                                 <i class="input-group-text "> <span class="no-italics">School Year</span></i>
                             
                             </div> 
-                        <select class="form-control" id="syear">
+                        <select class="form-control" id="syear" name="year">
                           <option value="">
                             ...
                           </option>
@@ -289,12 +291,12 @@
 
                     <div class="form-group">
                         <div class="custom-file">
-                          <input type="file" id="myfile">
+                          <input type="file" id="myfile" name="img">
                           <label class="custom-file-label" for="myfile">Upload Profile Picture</label>
                         </div>
                     </div>
 
-                  <input type="submit" value="Sign up" class="btn btn-primary btn-block mt-4">
+                  <input type="submit" value="Sign up" class="btn btn-primary btn-block mt-4" name="submit">
                   </form>
                   <?php
                     include("./pages/signup.php");
