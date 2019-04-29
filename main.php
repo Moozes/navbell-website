@@ -1,6 +1,8 @@
 <?php
     include('./functions/functions.php');
-    include('./pages/main.php');
+    include('./pages/main/challenges.php');
+    include('./pages/main/filters.php');// i think i will do it in this page main.php
+    include('./pages/main/start.php');//start the challenge and get the questions from api
 ?>
 
 <!DOCTYPE html>
@@ -112,13 +114,13 @@
       <div class="container">
          <a href="" class="navbar-brand text-monospace mr-5">Filter by: </a>
           
-        <form class="form-row">
+        <form class="form-row" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 
           
               <label class="my-2 col-xl-1 text-monospace" for="inlineFormCustomSelectMod text-muted">Module </label>
              
               <select class="my-3 custom-select mr-2 col-xl-1" id="inlineFormCustomSelectMod">
-                <option selected>None</option>
+                <option selected name="module">None</option>
                 <option value="1">Lorem</option>
                 <option value="2">Lorem</option>
                 <option value="3">Lorem</option>
@@ -128,27 +130,27 @@
             
               
             <label for="" class="my-2 col-xl-1 text-monospace text-muted">Minimum points </label>
-            <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minpoints">
+            <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minpoints" name="min_points">
           
           
 
            
               <label for="" class="my-2 col-xl-1 text-monospace text-muted">Maximum points </label>
-              <input class="form-control my-3 mr-2 col-xl-1" type="text" id="maxpoints">
+              <input class="form-control my-3 mr-2 col-xl-1" type="text" id="maxpoints" name="max_points">
             
 
               
                 <label for="" class="my-2 mr-3 col-xl-1 text-monospace text-muted">Minimum questions </label>
-                <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minquestions">
+                <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minquestions" name="min_qst">
               
 
               
                   <label for="" class="my-2 mr-3 col-xl-1 text-monospace text-muted">Maximum questions </label>
-                  <input class="form-control my-3 mr-3 col-xl-1" type="text" id="maxquestions">
+                  <input class="form-control my-3 mr-3 col-xl-1" type="text" id="maxquestions" name="max_qst">
              
     
                   <div class="my-3 col-xl-1">
-          <button class="btn btn-light " type="submit">Apply</button>
+          <button class="btn btn-light " type="submit" name="filter">Apply</button>
         </div>
         
 
@@ -173,10 +175,16 @@
   <div class="col-sm-12 ">
     <div id="inam" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+
+
             <?php for($j = 0; $j<count($challenges); $j += 3) : ?>
+
+
                 <div class="carousel-item<?php if($j == 0) echo ' active'; ?>">
                     <div class="container">
                         <div class="row">
+
+
                             <?php for($i = $j; $i<$j+3; $i++) : ?>
                             <?php if(isset($challenges[$i])) : ?>
                                 <div class="col-sm-12 col-lg-4">
@@ -205,10 +213,16 @@
                                 </div> <!--class="col-sm-12 col-lg-4"-->
                                 <?php endif ; ?>
                             <?php endfor ; ?>
+
+
                         </div>
                     </div>
                 </div>
+
+                
             <?php endfor ; ?>
+
+
         </div> <!--carousel inner-->
 
 
