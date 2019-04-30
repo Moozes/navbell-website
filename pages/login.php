@@ -12,7 +12,7 @@ if(isset($_POST["signin"])){
 		
 		case '1':
 			session_start();
-			$_SESSION['result'] = $result;
+			$_SESSION['user_info'] = $result;
 			//header('location: profile or main');
 			//die('<script>alert("raw ymchi go session part");</script>');
 			echo  '<script>alert("raw ymchi go session part");</script>';
