@@ -4,7 +4,7 @@
     $challenges = '
         [
             {
-                "id" : "157",
+                "id" : "1",
                 "point" : "1337",
                 "module" : "poo",
                 "story" : "ghjk",
@@ -12,7 +12,7 @@
                 "nbPersonSolved" : "8"
             },
             {
-                "id" : "157",
+                "id" : "2",
                 "point" : "1337",
                 "module" : "math",
                 "story" : "ghjk",
