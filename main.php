@@ -120,33 +120,33 @@
               <label class="my-2 col-xl-1 text-monospace" for="inlineFormCustomSelectMod text-muted">Module </label>
              
               <select class="my-3 custom-select mr-2 col-xl-1" id="inlineFormCustomSelectMod">
-                <option selected name="module">None</option>
-                <option value="1">Lorem</option>
-                <option value="2">Lorem</option>
-                <option value="3">Lorem</option>
+                <option selected name="module" value="all">None</option>
+                <option value="1">math</option>
+                <option value="2">physics</option>
+                <option value="3">poo</option>
               </select>
             
           
             
               
             <label for="" class="my-2 col-xl-1 text-monospace text-muted">Minimum points </label>
-            <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minpoints" name="min_points">
+            <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minpoints" name="min_points" value=0>
           
           
 
            
               <label for="" class="my-2 col-xl-1 text-monospace text-muted">Maximum points </label>
-              <input class="form-control my-3 mr-2 col-xl-1" type="text" id="maxpoints" name="max_points">
+              <input class="form-control my-3 mr-2 col-xl-1" type="text" id="maxpoints" name="max_points" value=1000><!-- supposant que 1000 est le max-->
             
 
               
                 <label for="" class="my-2 mr-3 col-xl-1 text-monospace text-muted">Minimum questions </label>
-                <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minquestions" name="min_qst">
+                <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minquestions" name="min_qst" value=1>
               
 
               
                   <label for="" class="my-2 mr-3 col-xl-1 text-monospace text-muted">Maximum questions </label>
-                  <input class="form-control my-3 mr-3 col-xl-1" type="text" id="maxquestions" name="max_qst">
+                  <input class="form-control my-3 mr-3 col-xl-1" type="text" id="maxquestions" name="max_qst" value=50><!-- supposant que 50 est le max-->
              
     
                   <div class="my-3 col-xl-1">

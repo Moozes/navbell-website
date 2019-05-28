@@ -34,6 +34,14 @@
                 "story" : "ghjk",
                 "nbOfQuestions" : "4",
                 "nbPersonSolved" : "8"
+            },
+            {
+                "id" : "10",
+                "point" : "1337",
+                "module" : "something",
+                "story" : "ghjk",
+                "nbOfQuestions" : "4",
+                "nbPersonSolved" : "8"
             }
 
         ]
