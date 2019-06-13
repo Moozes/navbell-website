@@ -10,8 +10,8 @@
                 echo '<script>alert("some thing went wrong");</script>';
             break;
             case '1':
-                //echo '<script>alert("your password has been changed");</script>'
-                header('location: password-changed.php');
+                echo '<script>alert("your password has been changed");</script>';
+                header('location: changed-password.php');
             break;
         }
     } 

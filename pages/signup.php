@@ -59,7 +59,7 @@ if(isset($_POST["submit"])){ // empty ....
 							echo "<script> alert('done !');</script>";
 							session_start();
 							$_SESSION['user_signup_info'] = $result;
-							//header('location: profile or main')
+							header('location: main.php');
                 			break;
                 		
                 	}

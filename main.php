@@ -1,4 +1,4 @@
-<?php
+  <?php
     include('./functions/functions.php');
     include('./pages/main/challenges.php');
     include('./pages/main/filters.php');// i think i will do it in this page main.php
@@ -177,7 +177,8 @@
         <div class="carousel-inner">
 
 
-            <?php for($j = 0; $j<count($challenges); $j += 3) : ?>
+
+<?php for($j = 0; $j<count($challenges); $j += 3) : ?>
 
 
                 <div class="carousel-item<?php if($j == 0) echo ' active'; ?>">
@@ -221,6 +222,57 @@
 
                 
             <?php endfor ; ?>
+            
+
+
+
+<!-- the new boucle nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnew-->
+            <?php for($i = 0; $i<count($challenges); $i++) : ?>
+
+                <?php if($i % 3 == 0) : ?>
+                <div class="carousel-item<?php if($i == 0) echo ' active'; ?>">
+                    <div class="container">
+                        <div class="row">
+                <?php endif; ?>
+
+
+                            
+                            <?php if(isset($challenges[$i])) : ?>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="card ml-4" style="width: 20rem; height: 27rem;">
+                                        <img src="img/mcomp.jpg" class=" card-img-top"alt="" style="width: 318px; height: 153px;">
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <?php echo $challenges[$i]->module; ?>
+                                            </h4>
+                                            <p class="card-text">
+                                                <?php echo $challenges[$i]->story; ?>
+                                            </p>
+                                    
+                                            <p class="text-center text-muted text-monospace "><?php echo $challenges[$i]->point; ?> points | <?php echo $challenges[$i]->nbPersonSolved; ?>/5  | <?php echo $challenges[$i]->nbOfQuestions; ?> questions </p>
+                                
+                                        </div>
+                                        <div class="card-footer ">
+                                            <button type="button" class="btn btn-outline-primary"><a href="<?php //echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button><!--there is a problem in json notation concerning the resourece--> 
+                                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                                                <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>">
+                                                <button type="submit" name="start"class="btn btn-primary " style="margin-left: 117px;">Start</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div> <!--class="col-sm-12 col-lg-4"-->
+                            <?php endif ; ?>
+                            
+
+                <?php if($i % 3 == 2) : ?>                
+                        </div>
+                    </div>
+                </div>
+                <?php endif; ?>
+                
+            <?php endfor ; ?>
+<!-- the new boucle nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnew-->
 
 
         </div> <!--carousel inner-->
