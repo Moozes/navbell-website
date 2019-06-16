@@ -56,10 +56,25 @@ if(isset($_POST["submit"])){ // empty ....
                 			echo "<script> alert('something went wrong');</script>";
                 			break;
 						case '1':
-							echo "<script> alert('done !');</script>";
 							session_start();
 							$_SESSION['user_signup_info'] = $result;
-							header('location: main.php');
+
+
+							$op = 'challenges';
+							$data = array("id" => $result->id, "year" => $result->year);
+							$challenges_result = postapi($url, $op, $data);
+							switch($challenges_result->reponse) {
+								case "-1" :
+								echo '<script>alert("some thing went wrong");</script>';
+								break;
+								case "1" :
+								$_SESSION['challenges'] = $challenges_result->challenges;
+								echo  '<script>alert("raw ymchi go session part");</script>';
+								header('location: main.php');
+								break;
+								default : 
+								echo '<script>alert("the switch default");</script>';
+							}
                 			break;
                 		
                 	}
