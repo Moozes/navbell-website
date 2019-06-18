@@ -209,17 +209,22 @@
                               <?php echo $challenges[$i]->module; ?>
                             </h4>
                             <p class="card-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium?
+                              <?php 
+                                if(strlen($challenges[$i]->story) <= 30) {
+                                  echo $challenges[$i]->story;
+                                }
+                               ?>
                             </p>
                             
                             <p class="text-center text-muted text-monospace "><?php echo $challenges[$i]->point; ?> points | <?php echo $challenges[$i]->nbPersonSolved; ?>/5  | <?php echo $challenges[$i]->nbOfQuestions; ?> questions </p>
                             
                           </div>
                           <div class="card-footer ">
-                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                              <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button> 
-                              <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>">
-                              <button type="submit" name="start"class="btn btn-primary " style="margin-left: 117px;">Start</button>
+                            <form action="challenge_discription.php" method="post">
+                              <!-- <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button> --> 
+                              <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>"> 
+                          <!-- <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button> -->
+                          <button type="submit" class="btn btn-outline-primary">Show discription</button> 
                             </form>
                           </div>
 
@@ -289,17 +294,22 @@
                               <?php echo $challenges[$i]->module; ?> 
                             </h4>
                             <p class="card-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium?
+                              <?php 
+                                if(strlen($challenges[$i]->story) <= 30) {
+                                  echo $challenges[$i]->story;
+                                }
+                               ?>
                             </p>
                             
                             <p class="text-center text-muted text-monospace "><?php echo $challenges[$i]->point; ?> points | <?php echo $challenges[$i]->nbPersonSolved; ?>/5  | <?php echo $challenges[$i]->nbOfQuestions; ?> questions </p>
                             
                           </div>
                           <div class="card-footer ">
-                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                              <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button> 
-                              <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>">
-                              <button type="submit" name="start"class="btn btn-primary " style="margin-left: 117px;">Start</button>
+                            <form action="challenge_discription.php" method="post">
+                              <!-- <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button>  -->
+                              <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>"> 
+                          <!-- <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button> -->
+                          <button type="submit" class="btn btn-outline-primary">Show discription</button>
                             </form>
                           </div>
 
@@ -367,7 +377,11 @@
                           <?php echo $challenges[$i]->module; ?>
                         </h4>
                         <p class="card-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium?
+                          <?php 
+                            if(strlen($challenges[$i]->story) <= 30) {
+                              echo $challenges[$i]->story;
+                            }
+                          ?>
                         </p>
                         
                         <p class="text-center text-muted text-monospace "><?php echo $challenges[$i]->point; ?> points | <?php echo $challenges[$i]->nbPersonSolved; ?>/5  | <?php echo $challenges[$i]->nbOfQuestions; ?> questions </p>
@@ -375,11 +389,12 @@
                       </div>
                       <div class="card-footer ">
                         
-                        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                          <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button> 
-                          <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>">
-                          <button type="submit" name="start"class="btn btn-primary " style="margin-left: 117px;">Start</button>
-                        </form>
+                        <form action="challenge_discription.php" method="post"> 
+                          <!-- <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button> --> 
+                          <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>"> 
+                          <!-- <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button> -->
+                          <button type="submit" class="btn btn-outline-primary">Show discription</button>
+                        </form> 
                       </div>
 
                     </div>

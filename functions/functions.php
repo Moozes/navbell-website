@@ -1,5 +1,5 @@
 <?php
-$url = "http://35.203.0.205:2019/";
+$url = "http://23.101.131.75:2019/";
 // sending requests to API 
 function tooken(){
        $key = "team7";

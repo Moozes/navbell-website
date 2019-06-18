@@ -7,10 +7,10 @@
                 "id" : "1",
                 "point" : "1",
                 "module" : "poo",
-                "story" : "ghjk",
+                "story" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "nbOfQuestions" : "1",
                 "nbPersonSolved" : "1",
-                "resource" : [{"nom" : "med", "url" : "fb.com"}]
+                "resource" : [{"nom" : "wiki", "url" : "fb.com"}, {"nom" : "cours pdf", "url" : "jahob.com"}]
             },
             {
                 "id" : "2",
@@ -53,7 +53,6 @@
     ';
     // there is a problem in json notation concerning the resource
     $challenges = json_decode($challenges);
-
 
     
        
