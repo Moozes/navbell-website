@@ -1,5 +1,6 @@
 <?php
   include('./functions/functions.php');
+  include('pages/main/get_profile_info.php');
   include 'pages/main/challenges.php';// i should include get_challenges not challenges.php this is fake data
   include('./pages/main/start.php');//start the challenge and get the questions from api
 ?>
@@ -48,7 +49,7 @@
    <!-- MAIN NAVBAR --> 
       <nav class="navbar navi navbar-expand-md navbar-light fixed-top py-1" role="navigation">
         <div class="container ">
-          <a href="index.html" class="navbar-brand">
+          <a href="index.php" class="navbar-brand">
               <img src="img/navlogo.png" width="70" height="35" />
               <h5 class="d-inline align-middle">NavBel</h3>
           </a>
@@ -63,7 +64,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
               <li class="nav-item px-2">
-                <a href="main.html" class="nav-link active">Main</a>
+                <a href="main.php" class="nav-link active">Main</a>
               </li>
             </ul>
 
@@ -74,10 +75,12 @@
 
                 </a>
                 <div class="dropdown-menu">
-                  <a href="profile.html" class="dropdown-item">
-                    <i class="fas fa-user-circle">
-                    </i> Profile
-                  </a>
+                  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                    <!-- <a href="" class="dropdown-item"> -->
+                      <i class="fas fa-user-circle">
+                      </i> <button type="submit" name="get_profile_info" >Profile</button>
+                    <!-- </a> -->
+                  </form>
 
                   <a href="settings.html" class="dropdown-item">
                       <i class="fas fa-cog">

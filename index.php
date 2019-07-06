@@ -281,13 +281,13 @@
                           <option value="2">  
                               2 CPI
                           </option>
-                          <option value="1">
+                          <option value="3">
                               1 CS
                           </option>
-                          <option value="2">
+                          <option value="4">
                               2 CS
                           </option>
-                          <option value="3">
+                          <option value="5">
                               3 CS
                           </option>
                         </select>
