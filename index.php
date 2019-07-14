@@ -30,10 +30,11 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link href="css/fontawesome-all.css" rel="stylesheet">
     
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -48,14 +49,34 @@
     
     
   </head>
+  
+  <body  data-spy="scroll" data-target=".fixed-top">
+   <!-- Body of  the webPage-->
 
-  <body>
+    <!-- Preloader -->
+	  <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
 
-    <!-- Start Here -->
-    <!--<div class="container"> add a closing div tag for this one, maybe?!!!--> 
 
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-2" role="navigation">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+     <!--  Navigation Logo-->
+      <a class="navbar-brand logo-image" href="index.html">
+        <img src="img/navlogo_min.png"  alt="alternative"></a>
+        <!--- Mobile Menu Toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>  
+    
+    </nav>
       
+<!--
       <div class="container">
         <a href="index.html" class="navbar-brand">
           <img src="img/navlogo.png" width="80" height="37" />
@@ -78,8 +99,8 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </div>  -->
+    
               
     <!-- Login Modal -->
     <div class="modal" tabindex="-1" id="loginModal">
@@ -338,15 +359,10 @@
             $('#fpf-modal-content').show();
           });
         });
+  });     
 
-  });
-
-
-
- 
-        
-     
       </script>
-    
+      <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+      <script src="js/scripts.js"></script> <!-- Custom scripts -->
   </body>
 </html>
