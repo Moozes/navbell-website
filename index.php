@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
     
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -106,7 +108,6 @@
                         <div class="text-container">
                             <h1>MOBILE APP <br>FOR <span id="js-rotating">DESIGNERS, MARKETERS, DEVELOPERS</span></h1>
                             <p class="p-large">Leno is one of the easiest and feature packed marketing automation apps in the market. Download it today!</p>
-                            <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
                             <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
                         </div>
                     </div> <!-- end of col -->
