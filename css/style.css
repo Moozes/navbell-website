@@ -714,11 +714,9 @@ input[type='checkbox'] {
 	background-color: #b5bcc4;
 	opacity: 0.2;
 }
+
 /* end of dropdown menu */
 
-.navbar-custom .social-icons {
-	display: none;
-}
 
 .navbar-custom .navbar-toggler {
 	border: none;
@@ -742,6 +740,10 @@ input[type='checkbox'] {
 	display: inline-block;
 	margin-right: 0.125rem;
 }
+
+
+
+
 
 
 /*********************/

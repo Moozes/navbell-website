@@ -60,7 +60,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
      <!--  Navigation Logo-->
-      <a class="navbar-brand logo-image" href="index.html">
+      <a class="navbar-brand logo-image" href="index.php">
         <img src="img/navlogo_min.png"  alt="alternative"></a>
         <!--- Mobile Menu Toggle -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,9 +89,16 @@
                     </div>
                 </li>
                 <!-- end of dropdown menu -->
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                 </li>
+                <li class="nav-item">
+              <a  href="#loginModal"  class="nav-link" data-toggle="modal" data-target="#loginModal" >Log in</a>
+            </li>
+            <li class="nav-item">
+              <a href="#signupModal" class="nav-link" data-toggle="modal" data-target="#signupModal">Sign up</a>
+            </li>
+                 
             </ul>
             
         </div>
@@ -412,11 +419,15 @@
   });     
 
       </script>
-      <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-      <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-      <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-      <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-      <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-      <script src="js/scripts.js"></script> <!-- Custom scripts -->
+          <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
   </body>
 </html>
