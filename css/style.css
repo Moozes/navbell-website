@@ -1268,7 +1268,7 @@ input[type='checkbox'] {
 .basic-4 {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
-	background: url('../images/download-background.jpg') center center no-repeat;
+	background: url('../img/download-background.jpg') center center no-repeat;
 	background-size: cover; 
 }
 
@@ -1329,7 +1329,7 @@ input[type='checkbox'] {
 .form {
 	padding-top: 6.25rem;
 	padding-bottom: 5.625rem;
-	background: url('../images/contact-background.jpg') center bottom no-repeat;
+	background: url('../img/contact-background.jpg') center bottom no-repeat;
 	background-size: cover; 
 }
 
