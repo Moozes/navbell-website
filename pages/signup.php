@@ -20,20 +20,60 @@ if(isset($_POST["submit"])){ // empty ....
                 	$lname = $_POST["lname"];
                 	$pass = $_POST["sgpassword"];
                 	$pass2 = $_POST["confirmSgpassword"];// i dont need this
-                	$year = $_POST["year"];
-                	
-                	$op = "signin";
-					$data = array('year'=>$year,'fname' =>$fname ,'lname'=>$lname,'email'=>$email,'password'=>$pass, 'ispublic'=>1);
-					
-					switch($_FILES['img']['error']){
-						case 0:
-							if($_FILES['img']['type'] == 'image/jpeg'){
-								$data['picture'] = base64_encode(file_get_contents($_FILES['img']['tmp_name']));
+                	$year = $result->year;//$_POST["year"]; get it from the API not the user input
+
+                	if($pass === $pass2) {
+
+	                	$op = "signin";
+						$data = array('year'=>$year,'fname' =>$fname ,'lname'=>$lname,'email'=>$email,'password'=>$pass, 'ispublic'=>1);
+						
+						switch($_FILES['img']['error']){
+							case 0:
+								if($_FILES['img']['type'] == 'image/jpeg'){
+									$data['picture'] = base64_encode(file_get_contents($_FILES['img']['tmp_name']));
+									$result = postapi($url,$op,$data);
+	                				switch ($result->reponse) {
+		                				case '-1':
+		                					echo "<script> alert('something went wrong');</script>";
+		                				break;
+										case '1':
+											session_start();
+											$_SESSION['user_signup_info'] = $result;
+
+											$op = 'challenges';
+											$data = array("id" => $result->id, "year" => $year);// not $result->year cause api doesnt return year 
+											$challenges_result = postapi($url, $op, $data);
+											switch($challenges_result->reponse) {
+												case "-1" :
+												echo '<script>alert("some thing went wrong or there are no challenges for you");</script>';
+												break;
+												case "1" :
+												$_SESSION['challenges'] = $challenges_result->challenges;
+												echo  '<script>alert("raw ymchi go session part");</script>';
+												header('location: main.php');
+												break;
+												default : 
+												echo '<script>alert("the switch default");</script>';
+											}
+			                			break;
+	                		
+	                				}
+								} else {
+									echo '<script>alert("your image should be in jpeg format");</script>';
+								}
+							break;
+							case 1:
+							case 2:
+								echo '<script>alert("image size too big");</script>';
+							break;
+							case 4:
+								//user didn't choose image so im posting a default image
+								$data['picture'] = base64_encode(file_get_contents('./img/profile.jpg'));
 								$result = postapi($url,$op,$data);
-                				switch ($result->reponse) {
-	                				case '-1':
-	                					echo "<script> alert('something went wrong');</script>";
-	                				break;
+	                			switch ($result->reponse) {
+		                			case '-1':
+		                				echo "<script> alert('something went wrong');</script>";
+		                			break;
 									case '1':
 										session_start();
 										$_SESSION['user_signup_info'] = $result;
@@ -43,7 +83,7 @@ if(isset($_POST["submit"])){ // empty ....
 										$challenges_result = postapi($url, $op, $data);
 										switch($challenges_result->reponse) {
 											case "-1" :
-											echo '<script>alert("some thing went wrong or there are no challenges for you");</script>';
+											echo '<script>alert("some thing went wrong or there is no challenges for you");</script>';
 											break;
 											case "1" :
 											$_SESSION['challenges'] = $challenges_result->challenges;
@@ -54,50 +94,16 @@ if(isset($_POST["submit"])){ // empty ....
 											echo '<script>alert("the switch default");</script>';
 										}
 		                			break;
-                		
-                				}
-							} else {
-								echo '<script>alert("your image should be in jpeg format");</script>';
-							}
-						break;
-						case 1:
-						case 2:
-							echo '<script>alert("image size too big");</script>';
-						break;
-						case 4:
-							//user didn't choose image so im posting a default image
-							$data['picture'] = base64_encode(file_get_contents('./img/profile.jpg'));
-							$result = postapi($url,$op,$data);
-                			switch ($result->reponse) {
-	                			case '-1':
-	                				echo "<script> alert('something went wrong');</script>";
-	                			break;
-								case '1':
-									session_start();
-									$_SESSION['user_signup_info'] = $result;
+	                		
+	                			}
+							break;
+							default: 
+								echo '<script>alert("the image didn\'t upload");</script>';  
 
-									$op = 'challenges';
-									$data = array("id" => $result->id, "year" => $year);// not $result->year cause api doesnt return year 
-									$challenges_result = postapi($url, $op, $data);
-									switch($challenges_result->reponse) {
-										case "-1" :
-										echo '<script>alert("some thing went wrong or there is no challenges for you");</script>';
-										break;
-										case "1" :
-										$_SESSION['challenges'] = $challenges_result->challenges;
-										echo  '<script>alert("raw ymchi go session part");</script>';
-										header('location: main.php');
-										break;
-										default : 
-										echo '<script>alert("the switch default");</script>';
-									}
-	                			break;
-                		
-                			}
-						break;
-						default: 
-							echo '<script>alert("the image didn\'t upload");</script>';  
+						}
 
+					} else {
+						echo "<script> alert('the passwords don't match);</script>"; 
 					}
                 	
 

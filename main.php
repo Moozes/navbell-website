@@ -77,8 +77,8 @@
                 <div class="dropdown-menu">
                   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <!-- <a href="" class="dropdown-item"> -->
-                      <i class="fas fa-user-circle">
-                      </i> <button type="submit" name="get_profile_info" >Profile</button>
+                      <!-- <i class="fas fa-user-circle"></i> -->
+                      <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
                     <!-- </a> -->
                   </form>
 
@@ -226,8 +226,8 @@
                             <form action="challenge_discription.php" method="post">
                               <!-- <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button> --> 
                               <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>"> 
-                          <!-- <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button> -->
-                          <button type="submit" class="btn btn-outline-primary">Show discription</button> 
+                          <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button>
+                          <!-- <button type="submit" class="btn btn-outline-primary">Start</button>  -->
                             </form>
                           </div>
 
@@ -311,8 +311,8 @@
                             <form action="challenge_discription.php" method="post">
                               <!-- <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button>  -->
                               <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>"> 
-                          <!-- <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button> -->
-                          <button type="submit" class="btn btn-outline-primary">Show discription</button>
+                          <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button>
+                          <!-- <button type="submit" class="btn btn-outline-primary">Start</button> -->
                             </form>
                           </div>
 
@@ -382,7 +382,9 @@
                         <p class="card-text">
                           <?php 
                             if(strlen($challenges[$i]->story) <= 30) {
-                              echo $challenges[$i]->story;
+                              //for($z = 0; $z < 30; $z++) {
+                                echo $challenges[$i]->story;
+                              //}
                             }
                           ?>
                         </p>
@@ -395,8 +397,8 @@
                         <form action="challenge_discription.php" method="post"> 
                           <!-- <button type="button" class="btn btn-outline-primary"><a href="<?php echo $challenges[$i]->resource[0]->url; ?>">Resources</a></button> --> 
                           <input type="hidden" name="id" value="<?php echo $challenges[$i]->id; ?>"> 
-                          <!-- <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button> -->
-                          <button type="submit" class="btn btn-outline-primary">Show discription</button>
+                          <button type="submit" name="start" class="btn btn-primary " style="margin-left: 117px;">Start</button>
+                          <!-- <button type="submit" class="btn btn-outline-primary">Start</button> -->
                         </form> 
                       </div>
 

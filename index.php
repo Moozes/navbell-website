@@ -243,7 +243,7 @@
                         
                           <input type="text" name="email" class="form-control" placeholder="E-mail"> 
                         </div>
-                      </div>
+                    </div>
 
                     <div class="form-group">
                         <div class="input-group mb-3">
@@ -265,7 +265,8 @@
                          </div>   
                       </div>
 
-                    <div class="form-group mb-4">
+                      <!-- the year is returned to you by the API , remove the year choice is an anti cheat stuff -->
+                    <!-- <div class="form-group mb-4">
                         <div class="input-group mb-4 mt-3">
                             <div class="input-group-prepend">
                                 <i class="input-group-text "> <span class="no-italics">School Year</span></i>
@@ -292,7 +293,7 @@
                           </option>
                         </select>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <div class="custom-file">
