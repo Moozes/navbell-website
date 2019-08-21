@@ -1,5 +1,7 @@
 <?php
   session_start();
+  include('./functions/functions.php');
+  include('pages/main/get_profile_info.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +56,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav">
                 <li class="nav-item px-2">
-                  <a href="main.html" class="nav-link active">Main</a>
+                  <a href="main.php" class="nav-link active">Main</a>
                 </li>
               </ul>
   
@@ -65,10 +67,12 @@
   
                   </a>
                   <div class="dropdown-menu">
-                    <a href="profile.html" class="dropdown-item">
-                      <i class="fas fa-user-circle">
-                      </i> Profile
-                    </a>
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                    <!-- <a href="profile.html" class="dropdown-item"> -->
+                      <!-- <i class="fas fa-user-circle"> -->
+                      <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
+                    <!-- </a> -->
+                    <form>
   
                     <a href="settings.html" class="dropdown-item">
                         <i class="fas fa-cog">

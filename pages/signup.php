@@ -29,35 +29,45 @@ if(isset($_POST["submit"])){ // empty ....
 						
 						switch($_FILES['img']['error']){
 							case 0:
-								if($_FILES['img']['type'] == 'image/jpeg'){
-									$data['picture'] = base64_encode(file_get_contents($_FILES['img']['tmp_name']));
-									$result = postapi($url,$op,$data);
-	                				switch ($result->reponse) {
-		                				case '-1':
-		                					echo "<script> alert('something went wrong');</script>";
-		                				break;
-										case '1':
-											session_start();
-											$_SESSION['user_signup_info'] = $result;
 
-											$op = 'challenges';
-											$data = array("id" => $result->id, "year" => $year);// not $result->year cause api doesnt return year 
-											$challenges_result = postapi($url, $op, $data);
-											switch($challenges_result->reponse) {
-												case "-1" :
-												echo '<script>alert("some thing went wrong or there are no challenges for you");</script>';
-												break;
-												case "1" :
-												$_SESSION['challenges'] = $challenges_result->challenges;
-												echo  '<script>alert("raw ymchi go session part");</script>';
-												header('location: main.php');
-												break;
-												default : 
-												echo '<script>alert("the switch default");</script>';
-											}
-			                			break;
-	                		
-	                				}
+								$extension = explode('.', $_FILES['img']['name'])[1];//extension check
+								if($extension == 'jpg') {
+
+									if($_FILES['img']['type'] == 'image/jpeg'){//mime type check
+										$data['picture'] = base64_encode(file_get_contents($_FILES['img']['tmp_name']));
+										$result = postapi($url,$op,$data);
+		                				switch ($result->reponse) {
+			                				case '-1':
+			                					echo "<script> alert('something went wrong');</script>";
+			                				break;
+											case '1':
+												session_start();
+												$_SESSION['user_signup_info'] = $result;
+
+												$op = 'challenges';
+												$data = array("id" => $result->id, "year" => $year);// not $result->year cause api doesnt return year 
+												$challenges_result = postapi($url, $op, $data);
+												switch($challenges_result->reponse) {
+													case "-1" :
+													echo '<script>alert("there are no challenges for you");</script>';
+													$_SESSION['challenges'] = $challenges_result->challenges;
+													header('location: main.php');
+													break;
+													case "1" :
+													$_SESSION['challenges'] = $challenges_result->challenges;
+													echo  '<script>alert("raw ymchi go session part");</script>';
+													header('location: main.php');
+													break;
+													default : 
+													echo '<script>alert("the switch default");</script>';
+												}
+				                			break;
+		                		
+		                				}
+									} else {
+										echo '<script>alert("your image should be in jpeg format");</script>';
+									}
+
 								} else {
 									echo '<script>alert("your image should be in jpeg format");</script>';
 								}
@@ -83,11 +93,11 @@ if(isset($_POST["submit"])){ // empty ....
 										$challenges_result = postapi($url, $op, $data);
 										switch($challenges_result->reponse) {
 											case "-1" :
-											echo '<script>alert("some thing went wrong or there is no challenges for you");</script>';
+											echo '<script>alert("there are no challenges for you");</script>';
+											header('location: main.php');
 											break;
 											case "1" :
 											$_SESSION['challenges'] = $challenges_result->challenges;
-											echo  '<script>alert("raw ymchi go session part");</script>';
 											header('location: main.php');
 											break;
 											default : 
@@ -103,19 +113,21 @@ if(isset($_POST["submit"])){ // empty ....
 						}
 
 					} else {
-						echo "<script> alert('the passwords don't match);</script>"; 
+						echo ("<script> alert('the passwords don't match);</script>"); 
 					}
                 	
 
                 
                 break;
 				case '2' :
-					echo("<script> alert('u re already subscribed');</script>");
+					echo("<script> alert('you are already subscribed');</script>");
                 break;
-                case '3' :echo('<script> alert("machi mn esi 404 "); </script>');
+                case '3' :echo('<script> alert("you are not from esi "); </script>');
                 break;
                 case "-1":echo('<script> alert("something went wrong");</script>');
                 break;
+                
+
 
 			}
         }
