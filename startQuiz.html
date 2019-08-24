@@ -87,13 +87,13 @@
   
  <!-- MAIN NAVBAR -->
 
-<form>
+
     <div id="container">
       <div id="start">Start</div>
       
       <div id="quiz" style="display: none">
         <div id="question"></div>
-        <!-- <div id="qImg"></div> -->
+        <div id="qImg"></div>
         <div id="choices">
           <div class="choice" id="A" onclick="checkAnswer('A')"></div>
           <div class="choice" id="B" onclick="checkAnswer('B')"></div>
@@ -101,15 +101,13 @@
         </div>
         <div id="timer">
           <div id="counter"></div>
-          <div id="btimeGauge"></div> 
-          <div id="timeGauge"></div><!-- progress bar -->
+          <div id="btimeGauge"></div>
+          <div id="timeGauge"></div>
         </div>
-        <div id="progress"></div><!-- the little circles -->
+        <div id="progress"></div>
       </div>
       <div id="scoreContainer" style="display: none"></div>
     </div>
-    <button id="sumbit" type="submit" style="display : none;">submit</button>
-</form>
     <script src="quiz.js"></script>
   </body>
 </html>

@@ -1,14 +1,10 @@
 <?php
-  session_start();
   include('./functions/functions.php');
   include('pages/main/get_profile_info.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php
-      echo "<script> let questions = ".$_SESSION['questions'].";</script>";
-    ?>
     <meta charset="UTF-8" />
     <title>Quiz</title>
 
@@ -56,7 +52,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav">
                 <li class="nav-item px-2">
-                  <a href="main.php" class="nav-link active">Main</a>
+                  <a href="main.html" class="nav-link active">Main</a>
                 </li>
               </ul>
   
@@ -68,11 +64,11 @@
                   </a>
                   <div class="dropdown-menu">
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                    <!-- <a href="profile.html" class="dropdown-item"> -->
-                      <!-- <i class="fas fa-user-circle"> -->
+                    <!-- <a href="" class="dropdown-item"> -->
+                      <!-- <i class="fas fa-user-circle"></i> -->
                       <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
                     <!-- </a> -->
-                    <form>
+                  </form>
   
                     <a href="settings.html" class="dropdown-item">
                         <i class="fas fa-cog">
@@ -97,11 +93,13 @@
   
  <!-- MAIN NAVBAR -->
 
+
     <div id="container">
       <div id="start">Start</div>
       
       <div id="quiz" style="display: none">
         <div id="question"></div>
+        <div id="qImg"></div>
         <div id="choices">
           <div class="choice" id="A" onclick="checkAnswer('A')"></div>
           <div class="choice" id="B" onclick="checkAnswer('B')"></div>
@@ -109,10 +107,10 @@
         </div>
         <div id="timer">
           <div id="counter"></div>
-          <div id="btimeGauge"></div> 
-          <div id="timeGauge"></div><!-- progress bar -->
+          <div id="btimeGauge"></div>
+          <div id="timeGauge"></div>
         </div>
-        <div id="progress"></div><!-- the little circles -->
+        <div id="progress"></div>
       </div>
       <div id="scoreContainer" style="display: none"></div>
     </div>

@@ -47,11 +47,11 @@
 
 
    <!-- MAIN NAVBAR --> 
-      <nav class="navbar navi navbar-expand-md navbar-light fixed-top py-1" role="navigation">
+      <nav class="navbar navi navbar-expand-md navbar-light fixed-top py-1" role="navigation" style="background-color:white;">
         <div class="container ">
           <a href="index.php" class="navbar-brand">
               <img src="img/navlogo.png" width="70" height="35" />
-              <h5 class="d-inline align-middle">NavBel</h3>
+              <h5 class="d-inline align-middle" style="color:black;">NavBel</h3>
           </a>
 
           <button
@@ -111,14 +111,14 @@
 
 
 <!-- FILTER NAVBAR -->
-    <nav class="navbar navi navbar-expand-sm  navbar-light">
+    <nav class="navbar navi navbar-expand-sm  navbar-light" style="background-color:white;border-bottom: 1px solid black;">
       <div class="container">
          <a href="" class="navbar-brand text-monospace mr-5">Filter by: </a>
           
         <form class="form-row" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 
           
-              <label class="my-2 col-xl-1 text-monospace" for="inlineFormCustomSelectMod text-muted">Module </label>
+              <label class="my-2 col-xl-1 text-monospace" for="inlineFormCustomSelectMod text-muted" style="color:black;">Module </label>
              
               <select class="my-3 custom-select mr-2 col-xl-1" id="inlineFormCustomSelectMod" name="module">
                 <option selected value="all">None</option>
