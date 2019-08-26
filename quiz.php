@@ -1,4 +1,5 @@
-
+<script type="text/javascript">
+	
 // select all elements
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
@@ -16,13 +17,13 @@ var choices = document.getElementById("choices");
 // create our questions
 let questions = [
     {
-        id : 1,
+        id : 4,
         time : 10,
         question: "What does HTML stand for?",
         imgSrc: "img/html.png",
         options : [
             {
-                id : 1,
+                id : 86,
                 trueoption : "first option"
             },
             {
@@ -39,70 +40,6 @@ let questions = [
             },
         ],
         correct: "second option"
-    }, {
-        id : 2,
-        time : 20,
-        question: "What does CSS stand for?",
-        imgSrc: "img/css.png",
-        options : [
-            {
-                id : 1,
-                trueoption : "option 2.1"
-            },
-            {
-                id : 2,
-                trueoption : "option 2.2"
-            },
-            {
-                id : 3,
-                trueoption : "option 2.3"
-            },
-        ],
-        correct: "option 2.2"
-    }, {
-        id : 3,
-        time : 10,
-        question: "What does JS stand for?",
-        imgSrc: "img/js.png",
-        options : [
-            {
-                id : 1,
-                trueoption : "option 3.1"
-            },
-            {
-                id : 2,
-                trueoption : "option 3.2"
-            },
-            {
-                id : 3,
-                trueoption : "option 3.3"
-            },
-        ],
-        correct: "option 3.2"
-    },{
-        id : 4,
-        time : 10,
-        question: "an additional question to test the progress dots",
-        imgSrc: "img/html.png",
-        options : [
-            {
-                id : 1,
-                trueoption : "option 1.1"
-            },
-            {
-                id : 2,
-                trueoption : "option 1.2"
-            },
-            {
-                id : 3,
-                trueoption : "option 1.3"
-            },
-            {
-                id : 4,
-                trueoption : "option 1.4"
-            },
-        ],
-        correct: "option 1.2"
     }
 ];
 
@@ -116,7 +53,7 @@ const gaugeWidth = 150; // 150px
 var gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
-let answersStringToPost = '{"challengeid" : "variable from php", "id" : "user id from php", "challenges" : [';//create the answers table as JSON string to post it directly without using JSON.stringify
+let answersStringToPost = '{"challengeid" : "18", "id" : "31", "challenges" : [';//create the answers table as JSON string to post it directly without using JSON.stringify
 let answersTable = [];// table of strings
 
 // render a question
@@ -235,7 +172,18 @@ function scoreRender() {
     }
     answersStringToPost += ']}';
 
-    console.log(answersStringToPost);
+    // posting to data base to update DB and get the totalwin points
+    var x = new XMLHttpRequest();
+	x.open("GET", "pages/startQuiz/checkAnswers.php?answersStringToPost="+answersStringToPost, true);
+	x.send();
+	x.onreadystatechange = 	function () {
+		if(this.readyState == 4 && this.status == 200) {
+			var score = this.responseText; 
+			console.log(score);
+			scoreDiv.innerHTML += "<p>" + score + "&nbspPts</p>";
+		}
+	}
+
 
     /* calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length); */
@@ -243,26 +191,8 @@ function scoreRender() {
 
 
 
-    // scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
+    
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</script>

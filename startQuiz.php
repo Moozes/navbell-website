@@ -37,7 +37,7 @@
     <!-- MAIN NAVBAR -->
        <nav class="navbar navi navbar-expand-md navbar-light fixed-top py-1" role="navigation">
           <div class="container ">
-            <a href="index.html" class="navbar-brand">
+            <a href="index.php" class="navbar-brand">
                 <img src="img/navlogo.png" width="70" height="35" />
                 <h5 class="d-inline align-middle">NavBel</h3>
             </a>
@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav">
                 <li class="nav-item px-2">
-                  <a href="main.html" class="nav-link active">Main</a>
+                  <a href="main.php" class="nav-link active">Main</a>
                 </li>
               </ul>
   
@@ -96,24 +96,38 @@
 
     <div id="container">
       <div id="start">Start</div>
+
       
       <div id="quiz" style="display: none">
         <div id="question"></div>
         <div id="qImg"></div>
+
+
         <div id="choices">
-          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <!-- <div class="choice" id="A" onclick="checkAnswer('A')"></div>
           <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div> -->
         </div>
+
+
         <div id="timer">
           <div id="counter"></div>
           <div id="btimeGauge"></div>
           <div id="timeGauge"></div>
         </div>
+        
+
         <div id="progress"></div>
       </div>
+
+
       <div id="scoreContainer" style="display: none"></div>
     </div>
-    <script src="quiz.js"></script>
+    <!-- <script src="quiz.js"></script> -->
+    <?php
+      include 'quiz.php';
+    ?>
+
+
   </body>
 </html>

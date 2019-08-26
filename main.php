@@ -217,7 +217,7 @@
                           style="width: 318px; height: 153px;"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">
+                          <h4 class="card-title" style="color:black;">
                             <?php echo $challenges[$i]->module; ?>
                           </h4>
                           
@@ -321,7 +321,7 @@
                           style="width: 318px; height: 153px;"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">
+                          <h4 class="card-title" style="color:black;">
                             <?php echo $challenges[$i]->module; ?>
                           </h4>
                           
@@ -423,7 +423,7 @@
                           style="width: 318px; height: 153px;"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">
+                          <h4 class="card-title" style="color:black;">
                             <?php echo $challenges[$i]->module; ?>
                           </h4>
                           
