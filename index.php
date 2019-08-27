@@ -939,7 +939,7 @@
         <div class="modal-dialog">
           <div class="modal-content" id="login-modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Log in</h5>
+              <h5 class="modal-title" style="color:black;">Log in</h5>
               <button class="close" data-dismiss="modal">&times;</button>
             </div>
   
@@ -982,7 +982,7 @@
                   name="signin"
                 />
                 <p class="text-center mt-4">
-                  <a id="FPModal" href="javascript:void(0)">Forgot password?</a>
+                  <a id="FPModal" href="javascript:void(0)" style="color:blue;">Forgot password?</a>
                 </p>
                 <!--
   
@@ -1000,13 +1000,13 @@
   <!-- Forgot Password Modal -->
           <div class="modal-content" id="fp-modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Log in</h5>
+              <h5 class="modal-title" style="color:black;">Log in</h5>
   
               <button class="close" data-dismiss="modal">&times;</button>
             </div>
   
             <div class="modal-body">
-              <p>
+              <p style="color:black;">
                 To reset your password, enter the e-mail address of your NavBel
                 account.
               </p>
@@ -1042,13 +1042,13 @@
   <!-- Forget Password Final Modal -->
           <div class="modal-content" id="fpf-modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Log in</h5>
+              <h5 class="modal-title" style="color:black;">Log in</h5>
   
               <button class="close" data-dismiss="modal">&times;</button>
             </div>
   
             <div class="modal-body">
-              <p>
+              <p style="color:black;">
                 The instructions to reset your password have been sent to you by
                 e-mail.
               </p>
@@ -1063,7 +1063,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Sign up</h5>
+              <h5 class="modal-title" style="color:black;">Sign up</h5>
               <button class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -1096,7 +1096,7 @@
                         
                           <input type="text" name="email" class="form-control" placeholder="E-mail"> 
                         </div>
-                      </div>
+                    </div>
 
                     <div class="form-group">
                         <div class="input-group mb-3">
@@ -1118,7 +1118,8 @@
                          </div>   
                       </div>
 
-                    <div class="form-group mb-4">
+                      <!-- the year is returned to you by the API , remove the year choice is an anti cheat stuff -->
+                    <!-- <div class="form-group mb-4">
                         <div class="input-group mb-4 mt-3">
                             <div class="input-group-prepend">
                                 <i class="input-group-text "> <span class="no-italics">School Year</span></i>
@@ -1145,7 +1146,7 @@
                           </option>
                         </select>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <div class="custom-file">
@@ -1168,7 +1169,7 @@
     
 
 
-
+      <script src="js/jquery.min.js"></script>
 
 
     <script>

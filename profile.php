@@ -67,10 +67,12 @@
   
                   </a>
                   <div class="dropdown-menu">
-                    <a href="profile.html" class="dropdown-item">
-                      <i class="fas fa-user-circle">
-                      </i> Profile
-                    </a>
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                    <!-- <a href="" class="dropdown-item"> -->
+                      <!-- <i class="fas fa-user-circle"></i> -->
+                      <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
+                    <!-- </a> -->
+                  </form>
   
                     <a href="settings.html" class="dropdown-item">
                         <i class="fas fa-cog">
@@ -102,7 +104,7 @@
             <!-- SIDEBAR USERPIC -->
             <div class="profile-userpic">
               <img
-                src="https://static.change.org/profile-img/default-user-profile.svg"
+                src="<?php echo $user_profile_info->picture; ?>"
                 class="img-responsive"
                 alt=""
               />
