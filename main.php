@@ -1,4 +1,5 @@
 <?php
+  session_start();// i commented all these pages //session_start()
   include('./functions/functions.php');
   include('pages/main/get_profile_info.php');
   include 'pages/main/challenges.php';// i should include get_challenges not challenges.php this is fake data
@@ -235,13 +236,17 @@
                           >
                             More Info
                           </button>
+                          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                            <input type="hidden" name="id" value="<?php echo $challenges[$i]->id;?>">
                           <button
-                            type="button"
+                            name="start"
+                            type="submit"
                             class="btn btn-primary "
                             style="margin-left: 105px;"
                           >
                             Start
                           </button>
+                          <form>
 
                           <!-- Make a pop up here to access when clicking on "More Info" containing: 1. Full decription 2. Resources-->
 
@@ -339,13 +344,17 @@
                           >
                             More Info
                           </button>
+                          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                            <input type="hidden" name="id" value="<?php echo $challenges[$i]->id;?>">
                           <button
-                            type="button"
+                            name="start"
+                            type="submit"
                             class="btn btn-primary "
                             style="margin-left: 105px;"
                           >
                             Start
                           </button>
+                          <form>
 
                           <!-- Make a pop up here to access when clicking on "More Info" containing: 1. Full decription 2. Resources-->
 
@@ -441,13 +450,18 @@
                           >
                             More Info
                           </button>
+                          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                            <input type="hidden" name="id" value="<?php echo $challenges[$i]->id;?>">
                           <button
-                            type="button"
+                            name="start"
+                            type="submit"
                             class="btn btn-primary "
                             style="margin-left: 105px;"
                           >
                             Start
+                            <!-- the button type  was "button" before i added the form -->
                           </button>
+                          <form>
 
                           <!-- Make a pop up here to access when clicking on "More Info" containing: 1. Full decription 2. Resources-->
 

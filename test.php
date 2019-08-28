@@ -1,20 +1,24 @@
-<?php
-//{"challengeid" : "18", "id" : "31", "challenges" : [{"time" : "true", "questionid" : "4", "optionid" : "86"}]}
-  include 'functions/functions.php';
 
-  $op = 'solve';
-  $data = '{"challengeid" : "18", "id" : "31", "challenges" : [{"time" : "true", "questionid" : "4", "optionid" : "86"}]}';
-  $data = json_decode($data, true);
-  $result  = postapi($url, $op, $data);
-  switch($result->reponse) {
-    case '-1':
-    echo 'some thing went wrong';
-    break;
-    case '1':
-    var_dump($result);
-    break;
-  }
-?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <?php
+	$x = array("name"=>"moussa", "age" => "22");
+	$x = json_encode($x);
+	$x = json_decode($x);
 
 
+	$x = json_encode($x);
 
+	// echo '<script>let questions = '.$x.';</script>'
+  ?>
+</head>
+<body>
+  <script type="text/javascript">
+  	let questions = <?php echo $x; ?>;
+  	console.log(questions);
+
+  </script>
+</body>
+</html>
