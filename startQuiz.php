@@ -4,6 +4,7 @@
   // if($_SESSION['refreshCount'] != 1) {
   //   header('location: main.php');
   // }
+  session_start();
   include('./functions/functions.php');
   include('pages/main/get_profile_info.php');
   include('pages/startQuiz/makeQuestionsTable.php');
