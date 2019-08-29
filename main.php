@@ -344,6 +344,7 @@
                           >
                             More Info
                           </button>
+                          
                           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                             <input type="hidden" name="id" value="<?php echo $challenges[$i]->id;?>">
                           <button

@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	// session_start();
 	// there is 
 	// $_SESSION['user_id']
 	// $_SESSION['challenge_id']
@@ -7,7 +7,7 @@
 	// $_SESSION['correctAnswers']
 
 
-	echo '<script>let answerStringToPost =\'{"challengeid" : "'.$_SESSION['challenge_id'].'", "id" : "'.$_SESSION['user_id'].'", "challenges" : [\' ;</script>';
+	echo '<script>let answersStringToPost =\'{"challengeid" : "'.$_SESSION['challenge_id'].'", "id" : "'.$_SESSION['user_id'].'", "challenges" : [\' ;</script>';
 	
 	echo '<script>let questions = '.json_encode($_SESSION['questions']).';</script>';
 	echo '<script>let correctAnswers = '.json_encode($_SESSION['correctAnswers']).';</script>';

@@ -53,7 +53,7 @@ const gaugeWidth = 150; // 150px
 var gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
-let answersStringToPost = '{"challengeid" : "18", "id" : "31", "challenges" : [';//create the answers table as JSON string to post it directly without using JSON.stringify
+//let answersStringToPost = '{"challengeid" : "18", "id" : "31", "challenges" : [';//create the answers table as JSON string to post it directly without using JSON.stringify
 let answersTable = [];// table of strings
 
 // render a question
