@@ -74,7 +74,7 @@
                     <!-- </a> -->
                   </form>
   
-                    <a href="settings.html" class="dropdown-item">
+                    <a href="settings.php" class="dropdown-item">
                         <i class="fas fa-cog">
                         </i> Settings
                       </a>
