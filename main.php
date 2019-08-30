@@ -246,7 +246,7 @@
                           >
                             Start
                           </button>
-                          <form>
+                          </form>
 
                           <!-- Make a pop up here to access when clicking on "More Info" containing: 1. Full decription 2. Resources-->
 
@@ -344,9 +344,9 @@
                           >
                             More Info
                           </button>
-                          
+
                           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                            <input type="hidden" name="id" value="<?php echo $challenges[$i]->id;?>">
+                          <input type="hidden" name="id" value="<?php echo $challenges[$i]->id;?>">
                           <button
                             name="start"
                             type="submit"
@@ -355,7 +355,7 @@
                           >
                             Start
                           </button>
-                          <form>
+                          </form>
 
                           <!-- Make a pop up here to access when clicking on "More Info" containing: 1. Full decription 2. Resources-->
 
@@ -453,16 +453,16 @@
                           </button>
                           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                             <input type="hidden" name="id" value="<?php echo $challenges[$i]->id;?>">
-                          <button
-                            name="start"
-                            type="submit"
-                            class="btn btn-primary "
-                            style="margin-left: 105px;"
-                          >
-                            Start
-                            <!-- the button type  was "button" before i added the form -->
-                          </button>
-                          <form>
+                            <button
+                              name="start"
+                              type="submit"
+                              class="btn btn-primary "
+                              style="margin-left: 105px;"
+                            >
+                              Start
+                              <!-- the button type  was "button" before i added the form -->
+                            </button>
+                          </form>
 
                           <!-- Make a pop up here to access when clicking on "More Info" containing: 1. Full decription 2. Resources-->
 
