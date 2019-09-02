@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  include('./functions/functions.php');
+  include('pages/main/get_profile_info.php');// the botton in the navbar
+  include('pages/settings/get_profile_info.php');// to fill the form inputs with default values
+  include('pages/settings/update_profile.php');// to request the update
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,7 +50,7 @@
       role="navigation"
     >
       <div class="container ">
-        <a href="index.html" class="navbar-brand">
+        <a href="index.php" class="navbar-brand">
           <img src="img/navlogo.png" width="70" height="35" />
           <h5 class="d-inline align-middle">NavBel</h5>
         </a>
@@ -58,7 +65,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item px-2">
-              <a href="main.html" class="nav-link active">Main</a>
+              <a href="main.php" class="nav-link active">Main</a>
             </li>
           </ul>
 
@@ -72,11 +79,14 @@
                 <i class="fas fa-user"></i> Welcome user
               </a>
               <div class="dropdown-menu">
-                <a href="profile.html" class="dropdown-item">
-                  <i class="fas fa-user-circle"> </i> Profile
-                </a>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                    <!-- <a href="" class="dropdown-item"> -->
+                      <!-- <i class="fas fa-user-circle"></i> -->
+                      <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
+                    <!-- </a> -->
+                  </form>
 
-                <a href="settings.html" class="dropdown-item">
+                <a href="settings.php" class="dropdown-item">
                   <i class="fas fa-cog"> </i> Settings
                 </a>
               </div>
@@ -99,8 +109,10 @@
           <br />
           <br />
           <div class="profile-userpic">
+            <!-- a static default image -->
+            <!-- https://static.change.org/profile-img/default-user-profile.svg -->
             <img
-              src="https://static.change.org/profile-img/default-user-profile.svg"
+              src="<?php echo $result->picture; ?>"
               class="img-responsive"
               alt=""
             />
@@ -108,14 +120,14 @@
           <!-- Form -->
           <br />
           <br />
-          <form>
+          <!-- <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
             <div class="custom-file">
               <input type="file" id="profile-pic" class="custom-file-input" />
               <label class="custom-file-label" for="profile-pic"
                 >Upload Picture
               </label>
             </div>
-          </form>
+          </form> -->
           <br />
           <!-- Form -->
         </div>
@@ -124,7 +136,7 @@
         <div class="col-md-8 order-2 bg-primary">
           <!-- Form -->
 
-          <form>
+          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
             <!-- TEXT FIELD GROUPS: form-control-lg or form-control-sm 
             <small class="form-text text-muted">Your email will not ever be shared</small>
             btn-block
@@ -132,6 +144,8 @@
             <br />
             <br />
             <div class="form-group">
+              <input type="hidden" name="id" value="<?php echo $result->id; ?>" />
+              <input type="hidden" name="ispublic" value="<?php echo $result->ispublic; ?>" />
               <label
                 for="first name"
                 style="color: white;  font-size: 19px; font-family: 'Lexend Deca', sans-serif;"
@@ -141,7 +155,9 @@
                 class="form-control"
                 type="text"
                 id="fname"
-                placeholder="Your first name"
+                placeholder="<?php echo $result->fname; ?>"
+                value="<?php echo $result->fname; ?>"
+                name="fname"
               />
             </div>
             <div class="form-group">
@@ -154,10 +170,12 @@
                 class="form-control "
                 type="text"
                 id="lname"
-                placeholder="Your last name"
+                placeholder="<?php echo $result->lname; ?>"
+                value="<?php echo $result->lname; ?>"
+                name="lname"
               />
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label
                 for="email"
                 style="color: white;  font-size: 19px; font-family: 'Lexend Deca', sans-serif;"
@@ -170,7 +188,7 @@
                 placeholder="Enter your email"
               />
             </div>
-
+ -->
             <div class="form-group">
               <label
                 for="password"
@@ -182,6 +200,7 @@
                 type="password"
                 id="password"
                 placeholder="Password"
+                name="password"
               />
             </div>
             <div class="form-group">
@@ -195,8 +214,16 @@
                 type="password"
                 id="cpassword"
                 placeholder="Confirm password"
+                name="confirm-password"
               />
             </div>
+            <div class="custom-file">
+              <input type="file" id="profile-pic" class="custom-file-input" name="img"/>
+              <label class="custom-file-label" for="profile-pic"
+                >Upload Picture
+              </label>
+            </div>
+            
 
             <br />
 
@@ -204,6 +231,7 @@
               class="btn btn-outline-light px-4"
               style="font-size:20px;"
               type="submit"
+              name="update-profile"
             >
               Save
             </button>

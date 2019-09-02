@@ -15,33 +15,33 @@ const scoreDiv = document.getElementById("scoreContainer");
 var choices = document.getElementById("choices");
 
 // create our questions
-let questions = [
-    {
-        id : 4,
-        time : 10,
-        question: "What does HTML stand for?",
-        imgSrc: "img/html.png",
-        options : [
-            {
-                id : 86,
-                trueoption : "first option"
-            },
-            {
-                id : 2,
-                trueoption : "second option"
-            },
-            {
-                id : 3,
-                trueoption : "third option"
-            },
-            {
-                id : 4,
-                trueoption : "fourth option"
-            },
-        ],
-        correct: "second option"
-    }
-];
+// let questions = [
+//     {
+//         id : 4,
+//         time : 10,
+//         question: "What does HTML stand for?",
+//         imgSrc: "img/html.png",
+//         options : [
+//             {
+//                 id : 86,
+//                 trueoption : "first option"
+//             },
+//             {
+//                 id : 2,
+//                 trueoption : "second option"
+//             },
+//             {
+//                 id : 3,
+//                 trueoption : "third option"
+//             },
+//             {
+//                 id : 4,
+//                 trueoption : "fourth option"
+//             },
+//         ],
+//         correct: "second option"
+//     }
+// ];
 
 // create some variables
 
@@ -53,7 +53,7 @@ const gaugeWidth = 150; // 150px
 var gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
-let answersStringToPost = '{"challengeid" : "18", "id" : "31", "challenges" : [';//create the answers table as JSON string to post it directly without using JSON.stringify
+//let answersStringToPost = '{"challengeid" : "18", "id" : "31", "challenges" : [';//create the answers table as JSON string to post it directly without using JSON.stringify
 let answersTable = [];// table of strings
 
 // render a question
@@ -181,17 +181,17 @@ function scoreRender() {
 			var score = this.responseText; 
 			console.log(score);
 			scoreDiv.innerHTML += "<p>" + score + "&nbspPts</p>";
+			setTimeout(redirect, 10000);// redirect to main after the challenge is over
 		}
 	}
 
 
     /* calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score/questions.length); */
+    const scorePerCent = Math.round(100 * score/questions.length); */ 
+}
 
-
-
-
-    
+function redirect() {
+	window.location.href = "main.php";
 }
 
 

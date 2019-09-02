@@ -55,7 +55,7 @@ if(isset($_POST["submit"])){ // empty ....
 													break;
 													case "1" :
 													$_SESSION['challenges'] = $challenges_result->challenges;
-													echo  '<script>alert("raw ymchi go session part");</script>';
+													
 													header('location: main.php');
 													break;
 													default : 
@@ -94,6 +94,7 @@ if(isset($_POST["submit"])){ // empty ....
 										switch($challenges_result->reponse) {
 											case "-1" :
 											echo '<script>alert("there are no challenges for you");</script>';
+											$_SESSION['challenges'] = $challenges_result->challenges;
 											header('location: main.php');
 											break;
 											case "1" :

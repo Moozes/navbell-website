@@ -1,6 +1,12 @@
 <?php
+  session_start();
+  $_SESSION ['refreshCount']++;
+  if($_SESSION['refreshCount'] != 1) {
+    header('location: main.php');
+  }
   include('./functions/functions.php');
   include('pages/main/get_profile_info.php');
+  include('pages/startQuiz/makeQuestionsTable.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +76,7 @@
                     <!-- </a> -->
                   </form>
   
-                    <a href="settings.html" class="dropdown-item">
+                    <a href="settings.php" class="dropdown-item">
                         <i class="fas fa-cog">
                         </i> Settings
                       </a>
