@@ -20,7 +20,7 @@
     />
 
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -43,7 +43,7 @@
           <div class="container ">
             <a href="index.php" class="navbar-brand">
                 <img src="img/navlogo.png" width="70" height="35" />
-                <h5 class="d-inline align-middle">NavBel</h3>
+                <h5 class="d-inline align-middle">NavBel</h5>
             </a>
   
             <button

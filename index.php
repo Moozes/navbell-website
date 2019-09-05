@@ -113,14 +113,14 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-container">
-                            <h1>MOBILE APP <br>FOR <span id="js-rotating">DESIGNERS, MARKETERS, DEVELOPERS</span></h1>
-                            <p class="p-large">Leno is one of the easiest and feature packed marketing automation apps in the market. Download it today!</p>
+                            <h1>MOBILE APP <br>FOR <span id="js-rotating">STUDENTS , TEACHERS , ESISTES</span></h1>
+                            <p class="p-large">Navbel is an application designed for esi students and teachers , if you want to be successful in esi just download it</p>
                             <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
                         </div>
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid" src="img/header-iphone.png" alt="alternative">
+                            <img class="img-fluid" src="img/navbel-header.png" alt="alternative">
                         </div> <!-- end of image-container -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -132,7 +132,16 @@
 
  <!-- Testimonials -->
  <div class="slider-1">
+
         <div class="container">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CREW MEMBERS</h2>
+                </div>
+            </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12">
 
@@ -146,7 +155,6 @@
                                     <div class="card">
                                         <img class="card-image" src="img/akram.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">I just finished my trial period and was so amazed with the support and results that I purchased Leno.</p>
                                             <p class="testimonial-author">Akram Boutouchent - Android developer</p>
                                         </div>
                                     </div>
@@ -158,7 +166,6 @@
                                     <div class="card">
                                         <img class="card-image" src="img/sifo.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">I don't know how I managed to get work done without Leno. The speed of this application is amazing!</p>
                                             <p class="testimonial-author">Hasnaoui Seyfeddine - Designer & Business Manager  </p>
                                         </div>
                                     </div>        
@@ -170,7 +177,6 @@
                                     <div class="card">
                                         <img class="card-image" src="img/slamat.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">This app has the potential of becoming a mandatory tool in every marketer's day to day operations.</p>
                                             <p class="testimonial-author">Slamat Mohamed Souhaib - Backend Developer & Security analysit</p>
                                         </div>
                                     </div>        
@@ -182,7 +188,6 @@
                                     <div class="card">
                                         <img class="card-image" src="img/moussa.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">Searching for a great marketing automation app was difficult but thankfully I found Leno.</p>
                                             <p class="testimonial-author">Khodja Moussa - Web Developer</p>
                                         </div>
                                     </div>
@@ -194,7 +199,6 @@
                                     <div class="card">
                                         <img class="card-image" src="img/djawed.jpeg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">Leno's support team is amazing. They've helped me with some issues and I am so grateful to them.</p>
                                             <p class="testimonial-author">Benahmed Djawed - Android Developer</p>
                                         </div>
                                     </div>        
@@ -206,7 +210,6 @@
                                     <div class="card">
                                         <img class="card-image" src="img/testimonial-6.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <p class="testimonial-text">Who would have thought that Leno can provide such amazing results in just a few weeks of use</p>
                                             <p class="testimonial-author">Sara Hasbellaoui - Web Developer</p>
                                         </div>
                                     </div>        
@@ -238,7 +241,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>FEATURES</h2>
-                    <div class="p-heading p-large">Leno was designed based on input from personal development coaches and popular trainers so it offers all</div>
+                    <div class="p-heading p-large">Leno was designed based on input from students from esi and teachers</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -246,13 +249,13 @@
                 <!-- Tabs Links -->
                 <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>CONFIGURING</a>
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>LEARNING</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>TRACKING</a>
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>CHALLENGING</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>MONITORING</a>
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>WINNING</a>
                     </li>
                 </ul>
                 <!-- end of tabs links -->
@@ -306,7 +309,7 @@
 
                                 <!-- Image Pane -->
                                 <div class="col-lg-4">
-                                    <img class="img-fluid" src="img/features-iphone-1.png" alt="alternative">
+                                    <img class="img-fluid" src="img/5.png" alt="alternative">
                                 </div>
                                 <!-- end of image pane -->
                                 
@@ -360,7 +363,7 @@
 
                                 <!-- Image Pane -->
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="img/features-iphone-2.png" alt="alternative">
+                                    <img class="img-fluid" src="img/6.png" alt="alternative">
                                 </div>
                                 <!-- end of image pane -->
                                 
@@ -472,7 +475,7 @@
 
                                 <!-- Image Pane -->
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="img/features-iphone-3.png" alt="alternative">
+                                    <img class="img-fluid" src="img/9.png" alt="alternative">
                                 </div>
                                 <!-- end of image pane -->
                                     
@@ -638,7 +641,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-1.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
+                                        <img class="img-fluid" src="img/1.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -646,7 +649,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-2.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
+                                        <img class="img-fluid" src="img/2.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -654,7 +657,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-3.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
+                                        <img class="img-fluid" src="img/3.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -662,7 +665,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-4.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
+                                        <img class="img-fluid" src="img/4.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -670,7 +673,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-5.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
+                                        <img class="img-fluid" src="img/5.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -678,7 +681,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-6.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-6.png" alt="alternative">
+                                        <img class="img-fluid" src="img/6.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -686,7 +689,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-7.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-7.png" alt="alternative">
+                                        <img class="img-fluid" src="img/7.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -694,7 +697,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-8.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-8.png" alt="alternative">
+                                        <img class="img-fluid" src="img/8.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -702,15 +705,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <a href="img/screenshot-9.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-9.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="img/screenshot-10.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-10.png" alt="alternative">
+                                        <img class="img-fluid" src="img/9.png" alt="alternative">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -796,9 +791,9 @@
                     <h2>CONTACT</h2>
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">Don't hesitate to give us a call or just use the contact form below</li>
-                        <li><i class="fas fa-map-marker-alt"></i>22 Innovative, San Francisco, CA 94043, US</li>
-                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">office@leno.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>École Supérieure en Informatique, BP 73, Bureau de poste EL WIAM, 22016 Sidi Bel Abbés, Algérie</li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+213 779 82 37 56</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">a.boutouchent@esi-sba.dz</a></li>
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -848,18 +843,14 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>About Leno</h4>
-                        <p>We're passionate about creating the best mobile apps for personal development</p>
+                        <h4>About Navbel</h4>
+                        <p>We want to extract the miraculous abilities that made you come to esi</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col middle">
                         <h4>Important Links</h4>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Our business partners <a class="turquoise" href="#your-link">startupguide.com</a></div>
-                            </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
                                 <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
@@ -871,13 +862,13 @@
                     <div class="footer-col last">
                         <h4>Social Media</h4>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.facebook.com/akram.boutouchent">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://twitter.com/AkramBoutou">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
