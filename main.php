@@ -4,6 +4,7 @@
   include('pages/main/get_profile_info.php');
   include 'pages/main/challenges.php';// i should include get_challenges not challenges.php this is fake data
   include('./pages/main/start.php');//start the challenge and get the questions from api
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +53,7 @@
         <div class="container ">
           <a href="index.php" class="navbar-brand">
               <img src="img/navlogo.png" width="70" height="35" />
-              <h5 class="d-inline align-middle" style="color:black;">NavBel</h3>
+              <h5 class="d-inline align-middle" style="color:black;">NavBel</h5>
           </a>
 
           <button
