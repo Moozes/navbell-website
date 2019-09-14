@@ -16,12 +16,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NavBel</title>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
@@ -29,7 +23,7 @@
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
-    
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -40,7 +34,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    
+
     
   </head>
   
@@ -61,7 +55,7 @@
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
      <!--  Navigation Logo-->
       <a class="navbar-brand logo-image" href="index.php">
-        <img src="img/navlogo_min.png"  alt="alternative"></a>
+        <img src=""  alt=""></a>
         <!--- Mobile Menu Toggle -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -80,13 +74,8 @@
                     <a class="nav-link page-scroll" href="#preview">PREVIEW</a>
                 </li>
                 <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="privacy-policy.html">PRIVACY POLICY</a>
                 </li>
                 <!-- end of dropdown menu -->
                 <li class="nav-item ">
@@ -274,8 +263,8 @@
                                     <div class="card left-pane first">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Goal Setting</h4>
-                                                <p>Like any self improving process, everything starts with setting your goals and committing to them</p>
+                                                <h4 class="card-title">Guidance</h4>
+                                                <p>You'll be guided with the greatest teachers in esi they will help you grow </p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa-compass"></i>
@@ -285,8 +274,8 @@
                                     <div class="card left-pane">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Visual Editor</h4>
-                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                                <h4 class="card-title">Ressources</h4>
+                                                <p>You'll be given the best ressources to get a better understanding of the matter</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa-file-code"></i>
@@ -296,14 +285,15 @@
                                     <div class="card left-pane">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Refined Options</h4>
-                                                <p>Each option packaged in the app's menus is provided in order to improve your personal development status</p>
+                                                <h4 class="card-title">Quick improvement</h4>
+                                                <p>You'll see fast results after  using the app</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa-gem"></i>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 <!-- end of icon cards pane -->
 
@@ -321,33 +311,23 @@
                                                 <i class="far fa-calendar-check"></i>
                                             </div>
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Calendar Input</h4>
-                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                                <h4 class="card-title">Daily challenges</h4>
+                                                <p>Each day new challenges are posted by the teachers just to keep up to date</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card right-pane">
                                         <div class="card-body">
                                             <div class="card-icon">
-                                                <i class="far fa-bookmark"></i>
+                                                <i class="far fa-users"></i>
                                             </div>
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Easy Reading</h4>
-                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                                <h4 class="card-title">Community Of Professors</h4>
+                                                <p>We have a community of awesome teachers and professors to help you in your studies </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card right-pane">
-                                        <div class="card-body">
-                                            <div class="card-icon">
-                                                <i class="fas fa-cube"></i>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Good Foundation</h4>
-                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <!-- end of icon cards pane -->
 
@@ -491,37 +471,6 @@
         </div> <!-- end of container --> 
     </div> <!-- end of tabs -->
     <!-- end of features -->
-
-    <!-- Video -->
-    <div id="preview" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>PREVIEW</h2>
-                    <div class="p-heading p-large">Target the right customers for your business with the help of Leno's patented segmentation technology</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Video Preview -->
-                    <div class="image-container">
-                        <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                <img class="img-fluid" src="img/video-frame.jpg" alt="alternative">
-                                <span class="video-play-button">
-                                    <span></span>
-                                </span>
-                            </a>
-                        </div> <!-- end of video-wrapper -->
-                    </div> <!-- end of image-container -->
-                    <!-- end of video preview -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of video -->
 
 
     <!-- Details 1 -->
