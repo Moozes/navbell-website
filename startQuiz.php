@@ -46,7 +46,7 @@
           <div class="container ">
             <a href="index.php" class="navbar-brand">
                 <img src="img/navlogo.png" width="70" height="35" />
-                <h5 class="d-inline align-middle">NavBel</h3>
+                <h3 class="d-inline align-middle">NavBel</h3>
             </a>
   
             <button
