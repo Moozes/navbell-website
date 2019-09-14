@@ -26,7 +26,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
