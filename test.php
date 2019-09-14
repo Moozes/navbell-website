@@ -1,13 +1,18 @@
 <?php
-	// die("<script>alert('some thing went wrong, please try again');</script>");
+	include 'functions/functions.php';
+
+	$op = 'getReward';
+	$data = '';
+	$result = postapi($url, $op, $data);
+
+	var_dump($result);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  
+	<title></title>
 </head>
 <body>
-  hello world
+
 </body>
 </html>

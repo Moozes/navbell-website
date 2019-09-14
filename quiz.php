@@ -181,7 +181,7 @@ function scoreRender() {
 			var score = this.responseText; 
 			console.log(score);
 			scoreDiv.innerHTML += "<p>" + score + "&nbspPts</p>";
-			setTimeout(redirect, 10000);// redirect to main after the challenge is over
+			setTimeout(redirect, 5000);// redirect to main after the challenge is over
 		}
 	}
 

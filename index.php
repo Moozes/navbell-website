@@ -1,10 +1,13 @@
 <?php
+  error_reporting(0);
+  include 'pages/logout.php';
   include("./functions/functions.php");
   $flag = 1337;
   // include is in the top because session_start  must be before any html tag
   include("./pages/login.php");
   include("./pages/signup.php");
   include('./pages/resetpwd/r1.php');
+
 
 ?>
 

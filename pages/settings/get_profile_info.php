@@ -14,5 +14,8 @@
 		// because i need profile info , i wont let the page appear untill i have it
 		die("<script>alert('some thing went wrong, please try again');</script>");
 		break;
+		case '1':
+		$_SESSION['user_profile_info'] = $result;
+		break;
 	}
 ?>
