@@ -1,4 +1,5 @@
 <?php
+  error_reporting(0);
   session_start();// i commented all these pages //session_start()
   include('./functions/functions.php');
   include('pages/main/get_profile_info.php');
@@ -93,7 +94,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a href="login.html" class="nav-link">
+                <a href="index.php" class="nav-link">
                   <i class="fas fa-user-times"></i> Log out
                 </a>
               </li>
@@ -123,14 +124,32 @@
 
           
               <label class="my-2 col-xl-1 text-monospace" for="inlineFormCustomSelectMod text-muted" style="color:black;">Module </label>
-             
+              <!-- show modules in filter according to the year -->
+             <?php
+                if(isset($_SESSION['user_signup_info'])) {
+                    $year = $_SESSION['user_signup_info']->year;
+                } else if(isset($_SESSION['user_login_info'])) {
+                    $year = $_SESSION['user_login_info']->year;
+                }
+                if($year == 1) :
+             ?>
               <select class="my-3 custom-select mr-2 col-xl-1" id="inlineFormCustomSelectMod" name="module">
                 <option selected value="all">None</option>
-                <option value="math">Math</option>
-                <option value="physics">Physics</option>
-                <option value="poo">Poo</option>
-                <option value="bdd">Bdd</option>
+                <option selected value="SYST1">Syst1</option>
+                <option selected value="ANGLAIS1">Anglais1</option>
+                <option selected value="ALGO1">Algo1</option>
+                <option selected value="ELECTRO1">Electro1</option>
+                
               </select>
+              <?php else : ?>
+                <select class="my-3 custom-select mr-2 col-xl-1" id="inlineFormCustomSelectMod" name="module">
+                <option selected value="all">None</option>
+                <option selected value="ANGLAIS2">Anglais2</option>
+                <option selected value="ELECTRO2">Electro2</option>
+                <option selected value="POO">Poo</option>
+                
+              </select>
+              <?php endif ;?>
             
           
             

@@ -1,4 +1,5 @@
 <?php
+  error_reporting(0);
   include 'pages/profile_info.php';
 ?>
 <!DOCTYPE html>
@@ -84,7 +85,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">
+                  <a href="index.php" class="nav-link">
                     <i class="fas fa-user-times"></i> Log out
                   </a>
                 </li>

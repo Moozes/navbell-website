@@ -1,4 +1,5 @@
 <?php
+  error_reporting(0);
   session_start();
   include 'functions/functions.php';
   include 'pages/main/get_profile_info.php';
@@ -129,7 +130,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a href="login.html" class="nav-link">
+              <a href="index.php" class="nav-link">
                 <i class="fas fa-user-times"></i> Log out
               </a>
             </li>
