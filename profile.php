@@ -58,6 +58,9 @@
                 <li class="nav-item px-2">
                   <a href="main.php" class="nav-link active">Main</a>
                 </li>
+                <li class="nav-item px-2">
+                <a href="rewards.php" class="nav-link active">Rewards</a>
+              </li>
               </ul>
   
               <ul class="navbar-nav ml-auto">
