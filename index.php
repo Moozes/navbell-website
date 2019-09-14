@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="css/fontawesome-all.css" rel="stylesheet">
+      <link href="css/font-awesome.css">
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
 
@@ -233,7 +234,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>FEATURES</h2>
-                    <div class="p-heading p-large">Leno was designed based on input from students from esi and teachers</div>
+                    <div class="p-heading p-large">Navbel was designed based on input from students from esi and teachers</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -247,7 +248,7 @@
                         <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>CHALLENGING</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>WINNING</a>
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-gem"></i>WINNING</a>
                     </li>
                 </ul>
                 <!-- end of tabs links -->
@@ -292,7 +293,7 @@
                                                 <p>You'll see fast results after  using the app</p>
                                             </div>
                                             <div class="card-icon">
-                                                <i class="far fa-gem"></i>
+                                                <i class="fas fa-bolt"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -322,7 +323,7 @@
                                     <div class="card right-pane">
                                         <div class="card-body">
                                             <div class="card-icon">
-                                                <i class="far fa-users"></i>
+                                                <i class="fas fa-users"></i>
                                             </div>
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">Community Of Professors</h4>
@@ -353,8 +354,8 @@
                                 <!-- Text And Icon Cards Area -->
                                 <div class="col-md-8">
                                     <div class="text-area">
-                                        <h3>Track Result Based On Your</h3>
-                                        <p>After you've configured the app and settled on the data gathering techniques you can not start the information trackers and start collecting those <a class="turquoise" href="#your-link">interesting details</a>. You can always change them.</p>
+                                        <h3>Challenge yourself with real problems</h3>
+                                        <p>We have prepared real world challenges that you can meet the same challenges in your exams </p>
                                     </div> <!-- end of text-area -->
                                     
                                     <div class="icon-cards-area">
@@ -364,7 +365,7 @@
                                                 </div>
                                                 <div class="card-body">
                                                     <h4 class="card-title">Good Foundation</h4>
-                                                    <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                                    <p>Our duty is to forge in our student a solid foundation so they can live in the professionnel world</p>
                                                 </div>
                                             </div>
                                             <div class="card">
@@ -373,7 +374,7 @@
                                                 </div>
                                                 <div class="card-body">
                                                     <h4 class="card-title">Easy Reading</h4>
-                                                    <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                                    <p>For all the challenges we follow the american style by giving qcms in the questions of the challenges</p>
                                                 </div>
                                             </div>
                                             <div class="card">
@@ -381,19 +382,11 @@
                                                     <i class="far fa-calendar-check"></i>
                                                 </div>
                                                 <div class="card-body">
-                                                    <h4 class="card-title">Calendar Input</h4>
-                                                    <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                                    <h4 class="card-title">Time is Money</h4>
+                                                    <p>All the challenges will be timed and has a time-penalty if you dont finish at time you wont receive points </p>
                                                 </div>
                                             </div>
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="far fa-file-code"></i>
-                                                </div>
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Visual Editor</h4>
-                                                    <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
-                                                </div>
-                                            </div>
+
                                     </div> <!-- end of icon cards area -->
                                 </div> <!-- end of col-md-8 -->
                                 <!-- end of text and icon cards area -->
@@ -413,45 +406,37 @@
                                     <div class="icon-cards-area">
                                         <div class="card">
                                             <div class="card-icon">
-                                                <i class="far fa-calendar-check"></i>
+                                                <i class="fas fa-reply"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Calendar Input</h4>
-                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                                <h4 class="card-title">Daily Awards</h4>
+                                                <p>Each day new awards are created with chance to all participant to win </p>
                                             </div>
                                         </div>
                                         <div class="card">
                                             <div class="card-icon">
-                                                <i class="far fa-file-code"></i>
+                                                <i class="far fa-gem"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Visual Editor</h4>
-                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                                <h4 class="card-title">Awesome Awards</h4>
+                                                <p>We provide for student awards that they need in their daily works and will work to get them</p>
                                             </div>
                                         </div>
                                         <div class="card">
                                             <div class="card-icon">
-                                                <i class="fas fa-cube"></i>
+                                                <i class="fas fa-bolt"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Good Foundation</h4>
-                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                                <h4 class="card-title">Direct Correction</h4>
+                                                <p>In all the question you pass after submit a reponse you will be corrected and shown the correct answer</p>
                                             </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="far fa-bookmark"></i>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title">Easy Reading</h4>
-                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
-                                            </div>
-                                        </div>
+
                                     </div> <!-- end of icon cards area -->
                                     
                                     <div class="text-area">
-                                        <h3>Monitoring Tools Evaluation</h3>
-                                        <p>Monitor the evolution of your finances and health state using tools integrated in Leno. The generated real time reports can be filtered based on any <a class="turquoise" href="#your-link">desired criteria</a>.</p>
+                                        <h3>Work hard and you will be awarded </h3>
+                                        <p>Our vision to the perfect studying system is letting the students want to study not forcing them and that by giving them award and making competition </p>
                                     </div> <!-- end of text-area -->
                                 </div> <!-- end of col-md-8 -->
                                 <!-- end of text and icon cards area -->
@@ -592,7 +577,7 @@
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-1.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/1.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/1.png" alt="alternative">
                                     </a>
                                 </div>
@@ -600,7 +585,7 @@
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-2.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/2.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/2.png" alt="alternative">
                                     </a>
                                 </div>
@@ -608,7 +593,7 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-3.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/3.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/3.png" alt="alternative">
                                     </a>
                                 </div>
@@ -616,7 +601,7 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-4.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/4.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/4.png" alt="alternative">
                                     </a>
                                 </div>
@@ -624,7 +609,7 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-5.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/5.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/5.png" alt="alternative">
                                     </a>
                                 </div>
@@ -632,7 +617,7 @@
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-6.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/6.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/6.png" alt="alternative">
                                     </a>
                                 </div>
@@ -640,7 +625,7 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-7.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/7.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/7.png" alt="alternative">
                                     </a>
                                 </div>
@@ -648,7 +633,7 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-8.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/8.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/8.png" alt="alternative">
                                     </a>
                                 </div>
@@ -656,7 +641,7 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="img/screenshot-9.png" class="popup-link" data-effect="fadeIn">
+                                    <a href="img/9.png" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="img/9.png" alt="alternative">
                                     </a>
                                 </div>
@@ -685,8 +670,8 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                        <h2>Download <span class="blue">Leno</span></h2>
-                        <p class="p-large">Target the right customers for your business with the help of Leno's patented technology and increase conversion figures in less than 2 weeks</p>
+                        <h2>Download <span class="blue">Navbel</span></h2>
+                        <p class="p-large">Don't miss the chance of becoming part of our family, you'll fastely notice the improvement you made by choosing our plateform</p>
                         <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
