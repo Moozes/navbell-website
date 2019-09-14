@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  include 'functions/functions.php';
+  include 'pages/main/get_profile_info.php';
+  include 'pages/rewards/rewards.php';
+  include 'pages/settings/get_profile_info.php';// the reward page wont appear untill i have profile info because i need the ponts to tell the user if he can buy a reward or not
+  include 'pages/rewards/sendReward.php';
+  // include 'pages/rewards/fakeData.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -74,7 +84,7 @@
    <!-- MAIN NAVBAR --> 
    <nav class="navbar navi navbar-expand-md navbar-light fixed-top py-1" role="navigation">
       <div class="container ">
-        <a href="index.html" class="navbar-brand">
+        <a href="index.php" class="navbar-brand">
             <img src="img/navlogo.png" width="70" height="35" />
             <h5 class="d-inline align-middle">NavBel</h3>
         </a>
@@ -89,10 +99,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item px-2">
-              <a href="main.html" class="nav-link ">Main</a>
+              <a href="main.php" class="nav-link ">Main</a>
             </li>
             <li class="nav-item px-2">
-                <a href="rewards.html" class="nav-link active">Rewards</a>
+                <a href="rewards.php" class="nav-link active">Rewards</a>
               </li>
           </ul>
 
@@ -112,7 +122,7 @@
               </form>
 
 
-                <a href="settings.html" class="dropdown-item">
+                <a href="settings.php" class="dropdown-item">
                     <i class="fas fa-cog">
                     </i> Settings
                   </a>
@@ -167,72 +177,40 @@
       </ol>
   <div class="carousel-inner ">
 
-    <div class="carousel-item active ">
+    <?php for($i = 0; $i < count($rewards); $i++) : ?>
+    <div class="carousel-item <?php if($i == 0) echo 'active'; ?> ">
       <div class="row">
         <div class="col-6">
-          <img class="d-inline-block " style=" width:100%; height: 560px!important; background-color: #999b9b; border-radius: 10px 0px 0px 10px; " src="https://www.smartwheel.ca/assets/images/Gift%20Card.png " alt="First slide">
+          <img class="d-inline-block " style=" width:100%; height: 560px!important; background-color: #999b9b; border-radius: 10px 0px 0px 10px; " src="<?php echo $rewards[$i]->image; ?> " alt="First slide">
         </div>
         <div class="col-6 d-flex align-items-center">
           <div>
-            <p style="font-weight: 300; font-size: 2.8em; font-family: 'Roboto', sans-serif; ">Reward 1</p>
-            <p class="lead" style="color: rgb(122, 122, 122); ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
-                voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
+            <p style="font-weight: 300; font-size: 2.8em; font-family: 'Roboto', sans-serif; color: rgb(122, 122, 122); ">Reward <?php echo ($i+1); ?></p>
+            <p class="lead" style="color: rgb(122, 122, 122); "><?php echo $rewards[$i]->description; ?></p>
                 
                
                  <div class="input-group mb-3">
-                  <button type="button" class="btn btn-primary btn-lg  px-5  mt-5 ">Get it Now</button> 
+                  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                  <input type="hidden" name="userId" value="<?php echo $_SESSION['user_profile_info']->id; ?>">
+                  <input type="hidden" name="rewardId" value="<?php echo $rewards[$i]->id ?>">
+                  <input type="hidden" name="rewardPoint" value="<?php echo $rewards[$i]->point ?>">
+                  <button type="submit" name="sendReward"class="btn btn-primary btn-lg  px-5  mt-5 ">Get it Now</button> 
+                  </form>
 
-               <h2 class="mt-5 ml-5 px-5 text-primary" >1 200</h2>
+               <h2 class="mt-5 ml-5 px-5 text-primary" ><?php echo $rewards[$i]->point; ?></h2>
                 </div>
+                <p style="color: rgb(122, 122, 122); ">Taken by : <?php echo $rewards[$i]->takenby; ?></p>
             </div>
         </div>
       </div>
     </div>
+    <?php endfor; ?>
+
+  </div>
 
 
-    <div class="carousel-item " >
-      <div class="row">
-        <div class="col-6">
-          <img class="d-block w-100" style=" width:100%; height: 560px !important; background-color: #999b9b; border-radius: 10px 0px 0px 10px;  " src= "http://houseroe.com/wp-content/uploads/2016/11/Navy.png " alt="Second slide">
-        </div>
-        <div class="col-6 d-flex align-items-center">
-            <div>
-              <p style="font-weight: 300; font-size: 2.8em; font-family: 'Roboto', sans-serif; ">Reward 2</p>
-              <p class="lead" style="color: rgb(122, 122, 122); ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
-                  voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
-                  
-                 
-                   <div class="input-group mb-3">
-                    <button type="button" class="btn btn-primary btn-lg px-5  mt-5 ">Get it Now</button> 
-  
-                 <h2 class="mt-5 ml-5 px-5 text-primary" >3 000</h2>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
 
-    <div class="carousel-item">
-      <div class="row">
-        <div class="col-6">
-          <img class="d-block w-100" style=" width:100%; height: 560px!important; background-color: #999b9b; border-radius: 10px 0px 0px 10px; "src="https://tenetrestaurant.com/wp-content/uploads/2015/11/giftcardblack.png" alt="Third slide">
-        </div>
-        <div class="col-6 d-flex align-items-center">
-            <div>
-              <p style="font-weight: 300; font-size: 2.8em; font-family: 'Roboto', sans-serif; ">Reward 3</p>
-              <p class="lead" style="color: rgb(122, 122, 122); ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
-                  voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
-                  
-                 
-                   <div class="input-group mb-3">
-                    <button type="button" class="btn btn-primary btn-lg px-5  mt-5 ">Get it Now</button> 
-  
-                 <h2 class="mt-5 ml-5 px-5 text-primary" >2 400</h2>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
+    
 
     
   
