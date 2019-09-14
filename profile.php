@@ -253,7 +253,7 @@ $Chart->render();
 
     </div>
   <div class="container">
-      <div id="chart-container">Chart will render here!</div>
+      <div id="chart-container"></div>
   </div>
 
 

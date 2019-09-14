@@ -33,7 +33,7 @@
     />
 
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -78,7 +78,7 @@
   </head>
 
 
-  <body class="marg" style="background-color: #c0d6d3;  ">
+  <body class="marg" style="background-color: #b4e2dc;  ">
 
 
 

@@ -52,7 +52,7 @@
    <!-- MAIN NAVBAR --> 
       <nav class="navbar navi navbar-expand-md navbar-light fixed-top py-1" role="navigation" style="background-color:white;">
         <div class="container ">
-          <a href="index.php" class="navbar-brand">
+          <a href="index.php" class="navbar-brand" style="text-decoration: none;">
               <img src="img/navlogo.png" width="70" height="35" />
               <h5 class="d-inline align-middle" style="color:black;">NavBel</h5>
           </a>
@@ -67,16 +67,16 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
               <li class="nav-item px-2">
-                <a href="main.php" class="nav-link active">Main</a>
+                <a href="main.php" class="nav-link active" style="text-decoration: none;">Main</a>
               </li>
               <li class="nav-item px-2">
-                <a href="rewards.php" class="nav-link active">Rewards</a>
+                <a href="rewards.php" class="nav-link active" style="text-decoration: none;">Rewards</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown mr-3">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;">
                   <i class="fas fa-user"></i> Welcome user
 
                 </a>
@@ -84,18 +84,18 @@
                   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <!-- <a href="" class="dropdown-item"> -->
                       <!-- <i class="fas fa-user-circle"></i> -->
-                      <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
+                      <button type="submit" name="get_profile_info" class="dropdown-item" >Profile</button>
                     <!-- </a> -->
                   </form>
 
-                  <a href="settings.php" class="dropdown-item">
+                  <a href="settings.php" class="dropdown-item" style="text-decoration: none;">
                       <i class="fas fa-cog">
                       </i> Settings
                     </a>
                 </div>
               </li>
               <li class="nav-item">
-                <a href="index.php" class="nav-link">
+                <a href="index.php" class="nav-link" style="text-decoration: none;">
                   <i class="fas fa-user-times"></i> Log out
                 </a>
               </li>
@@ -119,7 +119,7 @@
 <!-- FILTER NAVBAR -->
     <nav class="navbar navi navbar-expand-sm  navbar-light" style="background-color:white;border-bottom: 1px solid black;">
       <div class="container">
-         <a href="" class="navbar-brand text-monospace mr-5">Filter by: </a>
+         <a href="" class="navbar-brand text-monospace mr-5" style="text-decoration: none;">Filter by: </a>
           
         <form class="form-row" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 
@@ -155,7 +155,7 @@
           
             
               
-            <label for="" class="my-2 col-xl-1 text-monospace text-muted" >Minimum points </label>
+            <label for="" class="my-3 col-xl-1 text-monospace text-muted" >Minimum points </label>
             <input class="form-control my-3 mr-2 col-xl-1" type="text" id="minpoints"name="min_points" value=0 >
           
           
