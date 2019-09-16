@@ -1,4 +1,5 @@
 <?php
+  error_reporting(0);
   session_start();
   include('./functions/functions.php');
   include('pages/main/get_profile_info.php');// the botton in the navbar
@@ -67,6 +68,9 @@
             <li class="nav-item px-2">
               <a href="main.php" class="nav-link active">Main</a>
             </li>
+            <li class="nav-item px-2">
+                <a href="rewards.php" class="nav-link active">Rewards</a>
+              </li>
           </ul>
 
           <ul class="navbar-nav ml-auto">
@@ -92,7 +96,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a href="index.html" class="nav-link">
+              <a href="index.php" class="nav-link">
                 <i class="fas fa-user-times"></i> Log out
               </a>
             </li>

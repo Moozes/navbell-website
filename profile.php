@@ -1,5 +1,7 @@
 <?php
-error_reporting(0);
+
+  error_reporting(0);
+
 include 'pages/profile_info.php';
 include 'fusioncharts.php';
 include './functions/functions.php';
@@ -59,40 +61,44 @@ include './functions/functions.php';
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item px-2">
-                        <a href="main.php" class="nav-link active">Main</a>
-                    </li>
-                </ul>
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown mr-3">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                            <i class="fas fa-user"></i> Welcome user
-
-                        </a>
-                        <div class="dropdown-menu">
-                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                                <!-- <a href="" class="dropdown-item"> -->
-                                <!-- <i class="fas fa-user-circle"></i> -->
-                                <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
-                                <!-- </a> -->
-                            </form>
-
-                            <a href="settings.php" class="dropdown-item">
-                                <i class="fas fa-cog">
-                                </i> Settings
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.php" class="nav-link">
-                            <i class="fas fa-user-times"></i> Log out
-                        </a>
-                    </li>
-                </ul>
-
-
+              <ul class="navbar-nav">
+                <li class="nav-item px-2">
+                  <a href="main.php" class="nav-link active">Main</a>
+                </li>
+                <li class="nav-item px-2">
+                <a href="rewards.php" class="nav-link active">Rewards</a>
+              </li>
+              </ul>
+  
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <i class="fas fa-user"></i> Welcome user
+  
+                  </a>
+                  <div class="dropdown-menu">
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                    <!-- <a href="" class="dropdown-item"> -->
+                      <!-- <i class="fas fa-user-circle"></i> -->
+                      <button type="submit" name="get_profile_info" class="dropdown-item">Profile</button>
+                    <!-- </a> -->
+                  </form>
+  
+                    <a href="settings.php" class="dropdown-item">
+                        <i class="fas fa-cog">
+                        </i> Settings
+                      </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="index.php" class="nav-link">
+                    <i class="fas fa-user-times"></i> Log out
+                  </a>
+                </li>
+              </ul>
+  
+  
             </div>
 
 
@@ -205,6 +211,7 @@ include './functions/functions.php';
         </div>
     </div>
 
+
 </div>
 
 <?php
@@ -278,5 +285,6 @@ $Chart->render();
     $('#year').text(new Date().getFullYear());
 </script>
 </body>
+
 </html>
 
